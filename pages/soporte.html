@@ -86,18 +86,19 @@
                 <article class="bg-secondary bg-gradient container">
                     <form action="#" class="form text-center ">
                         <label for="text" class="d-flex flex-column">Nombre:
-                            <input type="text" placeholder="DECIME TU NOMBRE">
+                            <input type="text" id="nombre" placeholder="DECIME TU NOMBRE">
                             <label for="text" class="d-inline-flex flex-column">Apellido:
-                                <input type="text" placeholder="DECIME TU APELLIDO">
+                                <input type="text" id="apellido" placeholder="DECIME TU APELLIDO">
                             </label>
                             <textarea placeholder="Escriba aqui como podemos ayudarle" class="my-4"></textarea>
                         </label> 
                         <div class="form__div">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Reset">
+                            <button type="button" id="enviar" class="btn btn-secondary">Enviar</button>
+                            <input type="reset" class="btn btn-secondary" value="Reset">
                         </div>
                 </article>
             </section>
+            <div id="contenedor-modal"></div>
         </main>
         <footer>
             <div class="footer">
@@ -146,5 +147,6 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
         <script src="../javascript/carro.js"></script>
+        <script src="../javascript/soporte.js"></script>
     </body>
 </html>
